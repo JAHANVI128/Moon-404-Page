@@ -933,3 +933,50 @@ body {
     padding: 0 0.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.moon{
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  z-index: 2;
+  
+}
+
+.moon .face{
+  position: absolute;
+}
+
+.moon .face .mouth{
+  position: absolute;
+}
+
+.moon .face .eyes{
+  position: absolute;
+}
+
+.subtitle{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 1rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+button{
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 6px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:focus{
+  outline: 0;
+}
+
