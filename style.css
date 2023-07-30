@@ -1029,6 +1029,32 @@ body {
   height: 100%;
 }
 
+.wing{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 3px;
+  z-index: -300;
+}
+
+.wing-left{
+
+}
+
+.wing-left-top{
+
+}
+
+.wing-right{
+
+}
+
+.wing-right-top{
+  
+}
+
 .subtitle{
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
