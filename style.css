@@ -1040,11 +1040,14 @@ body {
 }
 
 .wing-left{
-
+  background: linear-gradient(to bottom, #a58dc4 0% , #7979a8 100%);
+  transform: translate3d(0,0,0) rotateX(-30deg);
+  -webkit-animation: wingLeft 1.3s cubic-bezier(0.45,0,0.5,0.95) infinite;
+          animation: wingLeft 1.3s cubic-bezier(0.45,0,0.5,0.95) infinite;
 }
 
 .wing-left-top{
-
+  
 }
 
 .wing-right{
