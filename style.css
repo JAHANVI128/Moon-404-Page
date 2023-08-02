@@ -1046,18 +1046,6 @@ body {
           animation: wingLeft 1.3s cubic-bezier(0.45,0,0.5,0.95) infinite;
 }
 
-.wing-left-top{
-  
-}
-
-.wing-right{
-
-}
-
-.wing-right-top{
-  
-}
-
 .subtitle{
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1131,6 +1119,26 @@ button:focus{
   }
   50% {
     opacity: 0.3;
+  }
+}
+
+@-webkit-keyframes wing-left{
+  0%,100%{
+    transform: translate3d(0,0,0) rotateX(-50deg);
+  }
+  50%{
+    transform: translate3d(0,-20px,0) rotateX(-130deg);
+    background: linear-gradient(to bottom,#d9d3e2 0% , #b8a5d1 100%);
+  }
+}
+
+@keyframes wing-left{
+  0%,100%{
+    transform: translate3d(0,0,0) rotateX(-50deg);
+  }
+  50%{
+    transform: translate3d(0,-20px,0) rotateX(-130deg);
+    background: linear-gradient(to bottom,#d9d3e2 0% , #b8a5d1 100%);
   }
 }
 
