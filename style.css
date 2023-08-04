@@ -963,7 +963,7 @@ body {
   -webkit-animation: snore 5s ease-in-out infinite;
           animation: snore 5s ease-in-out infinite;
   transform: rotate(45deg);
-  /* box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.3); */
+  box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .moon .face .eyes{
@@ -1036,8 +1036,8 @@ body {
 .wing{
   position: absolute;
   left: 0;
-  right: 0;
   top: 0;
+  right: 0;
   bottom: 0;
   border-radius: 3px;
   z-index: -300;
