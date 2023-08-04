@@ -1008,9 +1008,9 @@ body {
   height: 100%;
   position: absolute;
   top: 0;
-  right: 0;
   left: 0;
   bottom: 0;
+  right: 0;
 }
 
 .bird{
@@ -1020,6 +1020,8 @@ body {
   top: 50%;
   height: 40px;
   width: 50px;
+  transform: translate3d(-100vw,0,0) rotateY(90deg);
+  transform-style: preserve-3d;
 }
 
 .bird-container{
@@ -1027,6 +1029,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(50px,30px,-300px);
 }
 
 .wing{
