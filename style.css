@@ -1052,6 +1052,30 @@ body {
   -webkit-animation: wingRight 1.3s cubic-bezier(0.45,0,0.5,0.95) infinite;
           animation: wingRight 1.3s cubic-bezier(0.45,0,0.5,0.95) infinite;
 }
+
+.wing-right-top, .wing-left-top{
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  top: -20px;
+  width: 100%;
+  position: absolute;
+  transform-origin: 100% 100%;
+}
+
+.wing-left-top{
+  border: 20px solid #7979a8;
+  transform: translate3d(0,0,0) rotateX(-60deg);
+  -webkit-animation: wingRightTop 1.3s cubic-bezier(0.45,0,0.5,0.95) infinite;
+          animation: wingRightTop 1.3s cubic-bezier(0.45,0,0.5,0.95) infinite;
+}
+
+.wing-right-top{
+  border: 20px solid #b8a5d1;
+  transform: translate3d(0,0,0) rotateX(60deg);
+  -webkit-animation: wingRightTop 1.3s cubic-bezier(0.45,0,0.5,0.95) infinite;
+          animation: wingRightTop 1.3s cubic-bezier(0.45,0,0.5,0.95) infinite;
+}
+
 .subtitle{
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1074,6 +1098,48 @@ button{
 
 button:focus{
   outline: 0;
+}
+
+.bird-anim:nth-child(1){
+  -webkit-animation: bird1 30s linear infinite forwards;
+          animation: bird1 30s linear infinite forwards;
+}
+
+.bird-anim:nth-child(2){
+  -webkit-animation: bird2 30s linear infinite forwards;
+          animation: bird2 30s linear infinite forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  z-index: -1;
+}
+
+.bird-anim:nth-child(3){
+  -webkit-animation: bird3 30s linear infinite forwards;
+          animation: bird3 30s linear infinite forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.bird-anim:nth-child(4){
+  -webkit-animation: bird4 30s linear infinite forwards;
+          animation: bird4 30s linear infinite forwards;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.bird-anim:nth-child(5){
+  -webkit-animation: bird5 30s linear infinite forwards;
+          animation: bird5 30s linear infinite forwards;
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.bird-anim:nth-child(6){
+  -webkit-animation: bird6 30s linear infinite forwards;
+          animation: bird6 30s linear infinite forwards;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  z-index: -1;
 }
 
 @-webkit-keyframes rotate {
@@ -1165,6 +1231,154 @@ button:focus{
   50%{
     transform: translate3d(0,-20px,0) rotateX(130deg);
     background: linear-gradient(to bottom, #a58dc4 0% , #7979a8 100%);
+  }
+}
+
+@-webkit-keyframes wingLeftTop{
+  0%,100%{
+    transform: translate3d(0,0,0) rotateX(-10deg);
+  }
+  50%{
+    transform: translate3d(0px,0px,0) rotateX(-40deg);
+    border-bottom: 20px solid #b8a5d1;
+  }
+}
+
+@keyframes wingLeftTop{
+  0%,100%{
+    transform: translate3d(0,0,0) rotateX(-10deg);
+  }
+  50%{
+    transform: translate3d(0px,0px,0) rotateX(-40deg);
+    border-bottom: 20px solid #b8a5d1;
+  }
+}
+
+@-webkit-keyframes wingRightTop{
+  0%,100%{
+    transform: translate3d(0,0,0) rotateX(10deg);
+  }
+  50%{
+    transform: translate3d(0px,0px,0) rotateX(40deg);
+    border-bottom: 20px solid #7979a8;
+  }
+}
+
+@keyframes wingRightTop {
+  0%,100%{
+    transform: translate3d(0,0,0) rotateX(10deg);
+  }
+  50%{
+    transform: translate3d(0px,0px,0) rotateX(40deg);
+    border-bottom: 20px solid #7979a8;
+  }
+}
+
+@-webkit-keyframes bird1{
+  0%{
+    transform: translate3d(-120vw,-20px,-1000px) rotateY(-40deg) rotateX(0deg);
+  }
+  100%{
+    transform: translate3d(100vw,-40px,1000px) rotateY(-40deg) rotateX(0deg);
+  }
+}
+
+@keyframes bird1{
+  0%{
+    transform: translate3d(-120vw,-20px,-1000px) rotateY(-40deg) rotateX(0deg);
+  }
+  100%{
+    transform: translate3d(100vw,-40px,1000px) rotateY(-40deg) rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes bird2{
+  0%,15%{
+    transform: translate3d(100vw,-300px,-1000px) rotateY(10deg) rotateX(0deg);
+  }
+  100%{
+    transform: translate3d(-100vw,-20px,-1000px) rotateY(10deg) rotateX(0deg);
+  }
+}
+
+@keyframes bird2{
+  0%,15%{
+    transform: translate3d(100vw,-300px,-1000px) rotateY(10deg) rotateX(0deg);
+  }
+  100%{
+    transform: translate3d(-100vw,-20px,-1000px) rotateY(10deg) rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes bird3{
+  0%{
+    transform: translate3d(100vw,-50vh,100px) rotateY(-5deg) rotateX(-20deg);
+  }
+  100%{
+    transform: translate3d(-100vw,-10vh,100px) rotateY(-5deg) rotateX(-20deg);
+  }
+}
+
+@keyframes bird3{
+  0%{
+    transform: translate3d(100vw,-50vh,100px) rotateY(-5deg) rotateX(-20deg);
+  }
+  100%{
+    transform: translate3d(-100vw,-10vh,100px) rotateY(-5deg) rotateX(-20deg);
+  }
+}
+
+@-webkit-keyframes bird4{
+  0%{
+    transform: translate3d(100vw,30vh,200px) rotateY(-5deg) rotateX(-10deg);
+  }
+  100%{
+    transform: translate3d(-100vw,-30vh,200px) rotateY(-5deg) rotateX(-10deg);
+  }
+}
+
+@keyframes bird4{
+  0%{
+    transform: translate3d(100vw,30vh,200px) rotateY(-5deg) rotateX(-10deg);
+  }
+  100%{
+    transform: translate3d(-100vw,-30vh,200px) rotateY(-5deg) rotateX(-10deg);
+  }
+}
+
+@-webkit-keyframes bird5{
+  0%,5%{
+    transform: translate3d(100vw,30vh,400px) rotateY(-15deg) rotateX(-10deg);
+  }
+  100%{
+    transform: translate3d(-100vw,10vh,400px) rotateY(-15deg) rotateX(-10deg);
+  }
+}
+
+@keyframes bird5{
+  0%,5%{
+    transform: translate3d(100vw,30vh,400px) rotateY(-15deg) rotateX(-10deg);
+  }
+  100%{
+    transform: translate3d(-100vw,10vh,400px) rotateY(-15deg) rotateX(-10deg);
+  }
+}
+
+@-webkit-keyframes bird6{
+  0%,10%{
+    transform: translate3d(-100vw,20vh,-500px) rotateY(15deg) rotateX(10deg);
+  }
+  100%{
+    transform: translate3d(100vw,40vh,-800px) rotateY(5deg) rotateX(10deg);
+  }
+}
+
+@keyframes bird6{
+  0%,10%{
+    transform: translate3d(-100vw,20vh,-500px) rotateY(15deg) rotateX(10deg);
+  }
+  100%{
+    transform: translate3d(100vw,40vh,-800px) rotateY(5deg) rotateX(10deg);
   }
 }
 
