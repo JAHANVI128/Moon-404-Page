@@ -14,4 +14,10 @@ Moon-404-Error-Page is a creative and playful solution to the classic 404 error 
 
 - **Customizable**: The project is designed to be easily customizable, allowing you to tailor the visuals and interactions to your website's style.
 
+## Technology Stack
+
+The core technologies include:
+
+- Frontend: HTML5, CSS3
+
 Happy coding!
